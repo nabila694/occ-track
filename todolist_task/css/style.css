@@ -1,0 +1,18 @@
+body{
+  background-color: green;
+  border: 1px solid white;
+}
+.container {
+  
+  color: white;
+  text-align: center;
+}
+h2{
+  color:red;
+}
+.uilist{
+ 
+  color: red;
+  text-align: center;
+}
+
