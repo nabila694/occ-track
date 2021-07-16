@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQSlider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+  $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+    if(nextImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+
+  $('.prev').on('click', function(){
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+
+    if(prevImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+    }
+  });
+});
+
+</script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>JQS IMAGE SCROLLING</h1>
+      <div class="slider-outer">
+        <img src="arrow-left.png" class="prev" alt="Prev">
+        <div class="slider-inner">
+          <img src="second.jpg" class="active">
+          <img src="third.png">
+          <img src="four.png">
+          <img src="five.jpg">
+          <img src="six.jpg">
+        </div>
+        <img src="arrow-right.png" class="next" alt="Next">
+      </div>
+    </div>
+  </body>
+</html>
