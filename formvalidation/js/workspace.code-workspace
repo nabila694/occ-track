@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\emaill"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Knockoutjs"
+	}
+}
