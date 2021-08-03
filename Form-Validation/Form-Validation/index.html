@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+  <form action="" onsubmit="return formValidation()" name="form" class="contact-form">
+    <div class="input-group">
+      <label for="name">First Name</label>
+      <input id="name" name="fname" type="text"  placeholder="First Name"  autocomplete="on"/>
+      <span id="err1"></span>
+    </div>
+    <div class="input-group">
+      <label for="name">Last Name</label>
+      <input id="name" name="lname" type="text" placeholder="Last Name" autocomplete="off"/>
+      <span id="err2"></span>
+
+    </div>
+    
+    <div class="input-group">
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email"  placeholder="Email Id"/>
+      <span></span>
+    </div>
+    
+
+    <div class="input-group" id="choosegender">
+      <p class="group-label">Gender:</p>
+      <input id="male" name="gender" type="radio" value="male"/>
+      <label class="inline" for="male-mr">Male</label>
+  
+      
+      <input id="female" name="gender" type="radio" value="female"/>
+      <label class="inline" for="female-mrs">Female</label>
+      
+      
+      <input id="other" name="gender" type="radio" value="others"/>
+      <label class="inline" for="other-ms">Others</label>
+      <span></span>
+    </div>
+    
+    <div class="input-group">
+      <p class="group-label">Courses:</p>
+      <input id="courses-html" name="check1" type="checkbox"  autocomplete="off" value="html"/>
+      <label class="inline" for="courses-html">HTML</label>
+      <input id="courses-css" name="check2" type="checkbox" autocomplete="off"  value="css"/>
+      <label class="inline" for="courses-css">CSS</label>
+      <span></span>
+    </div>
+     <div class="submit">
+    <button  type="submit" value="click" >Submit</button>
+  </div>
+  </form>
+      <script src="js/script.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>
